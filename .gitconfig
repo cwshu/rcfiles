@@ -1,0 +1,12 @@
+[user]
+	email = u1240976@gmail.com
+	name = susu
+[core]
+	editor = vim
+[merge]
+	tool = vimdiff
+[alias]
+    st = status
+    co = checkout
+    ci = commit
+    br = branch

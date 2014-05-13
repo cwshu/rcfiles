@@ -1,0 +1,7 @@
+[ui]
+username = u1240976 <u1240976@gmail.com>
+[diff]
+git = true
+[extensions]
+hgext.mq=
+graphlog=
