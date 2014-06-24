@@ -14,6 +14,7 @@ call vundle#begin('~/.vim/bundle/')
 Plugin 'gmarik/Vundle.vim'
 Plugin 'Rykka/riv.vim'
 Plugin 'steffanc/cscopemaps.vim'
+" Plugin 'Rip-Rip/clang_complete'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -28,6 +29,10 @@ filetype plugin on
 " :PluginClean(!)      - confirm (or auto-approve) removal of unused plugins
 "
 " see :h vundle for more details or wiki for FAQ
+
+" let g:clang_complete_copen = 1
+" let g:clang_use_library = 1
+" let g:clang_library_path = "/usr/lib/llvm-3.2/lib/"
 
 "Fundamental Settings
 "--------------------

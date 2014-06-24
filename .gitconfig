@@ -1,10 +1,10 @@
 [user]
-	email = u1240976@gmail.com
-	name = susu
+    email = u1240976@gmail.com
+    name = susu
 [core]
-	editor = vim
+    editor = vim
 [merge]
-	tool = vimdiff
+    tool = vimdiff
 [alias]
     st = status
     co = checkout
@@ -14,3 +14,5 @@
     lg = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold red)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(bold blue)<%an>%C(reset)%C(bold yellow)%d%C(reset)' --all
     lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold red)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(bold blue)- %an<%ae>%C(reset)' --all
     # lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+[color]
+    ui = true
