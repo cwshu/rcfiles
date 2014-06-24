@@ -14,6 +14,7 @@ call vundle#begin('~/.vim/bundle/')
 Plugin 'gmarik/Vundle.vim'
 Plugin 'Rykka/riv.vim'
 Plugin 'steffanc/cscopemaps.vim'
+Plugin 'davidhalter/jedi-vim'
 " Plugin 'Rip-Rip/clang_complete'
 
 " All of your Plugins must be added before the following line
