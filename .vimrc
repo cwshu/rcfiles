@@ -56,6 +56,8 @@ set laststatus=2             "狀態列
 set wildmenu
 set hlsearch                 "highlight when use / to search word
 set showcmd
+set list                     "show tab/end of line
+set listchars=tab:>-         "show tab as >---
 
 "Editing
 "-------
