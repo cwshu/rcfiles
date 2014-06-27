@@ -55,6 +55,7 @@ set scrolloff=5              "the minimal screen line above/below the cursor
 set laststatus=2             "狀態列
 set wildmenu
 set hlsearch                 "highlight when use / to search word
+set showcmd
 
 "Editing
 "-------
