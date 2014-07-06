@@ -12,10 +12,17 @@ call vundle#begin('~/.vim/bundle/')
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
+
+" rst plugin
 Plugin 'Rykka/riv.vim'
+
+" C/C++ plugin
 Plugin 'steffanc/cscopemaps.vim'
-Plugin 'davidhalter/jedi-vim'
 " Plugin 'Rip-Rip/clang_complete'
+Plugin 'hari-rangarajan/CCTree'
+
+" python plugin
+Plugin 'davidhalter/jedi-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
