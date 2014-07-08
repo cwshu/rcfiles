@@ -59,10 +59,11 @@ set ru
 syntax on                    "syntax highlighting 
 set cul                      "cursorline highlighting
 set scrolloff=5              "the minimal screen line above/below the cursor
-set laststatus=2             "狀態列
+set laststatus=2             "status line
 set wildmenu
 set hlsearch                 "highlight when use / to search word
-set showcmd
+set showcmd                  "show (partial) command in status line.
+set showmode
 set list                     "show tab/end of line
 set listchars=tab:>-         "show tab as >---
 
@@ -96,6 +97,12 @@ nmap <C-h> :tabmove -1<CR>
 imap <C-h> <ESC><C-h>a
 nmap <C-l> :tabmove +1<CR>
 imap <C-l> <ESC><C-h>a
+
+"File Specific settings
+"----
+autocmd FileType html setlocal sw=2 ts=2
+autocmd FileType xml setlocal sw=2 ts=2
+autocmd FileType make setlocal noexpandtab
 
 "Misc
 "----
