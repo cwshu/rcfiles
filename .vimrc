@@ -48,7 +48,7 @@ filetype plugin on
 set encoding=utf-8    
 set langmenu=zh_TW.UTF-8
 language message zh_TW.UTF-8
-set fileencodings=ucs-bom,utf-8,Big5,cp950,GB2312
+set fileencodings=ucs-bom,utf-8,Big5,cp950,GB2312,GBK
 
 "User Interface
 "--------------
@@ -100,8 +100,8 @@ imap <C-l> <ESC><C-h>a
 
 "File Specific settings
 "----
-autocmd FileType html setlocal sw=2 ts=2
-autocmd FileType xml setlocal sw=2 ts=2
+"autocmd FileType html setlocal sw=2 ts=2
+"autocmd FileType xml setlocal sw=2 ts=2
 autocmd FileType make setlocal noexpandtab
 
 "Misc
