@@ -2,13 +2,10 @@
 
 "Vundle
 "------
-set nocompatible              " be iMproved, required
-filetype off                  " required
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-" a path where Vundle should install plugins
-call vundle#begin('~/.vim/bundle/') 
+set nocompatible                     " be iMproved, required
+filetype off                         " required
+set rtp+=~/.vim/bundle/Vundle.vim    " set the runtime path to include Vundle and initialize
+call vundle#begin('~/.vim/bundle/')  " a path where Vundle should install plugins
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
