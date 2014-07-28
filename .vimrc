@@ -11,7 +11,7 @@ call vundle#begin('~/.vim/bundle/')  " a path where Vundle should install plugin
 Plugin 'gmarik/Vundle.vim'
 
 " rst plugin
-Plugin 'Rykka/riv.vim'
+" Plugin 'Rykka/riv.vim'
 
 " C/C++ plugin
 Plugin 'steffanc/cscopemaps.vim'
