@@ -2,6 +2,8 @@
 
 "Vundle
 "------
+set shell=bash                       " use POSIX compatible shell
+
 set nocompatible                     " be iMproved, required
 filetype off                         " required
 set rtp+=~/.vim/bundle/Vundle.vim    " set the runtime path to include Vundle and initialize
@@ -11,7 +13,7 @@ call vundle#begin('~/.vim/bundle/')  " a path where Vundle should install plugin
 Plugin 'gmarik/Vundle.vim'
 
 " rst plugin
-" Plugin 'Rykka/riv.vim'
+Plugin 'Rykka/riv.vim'
 
 " C/C++ plugin
 Plugin 'steffanc/cscopemaps.vim'
@@ -96,7 +98,7 @@ nmap <C-l> :tabmove +1<CR>
 imap <C-l> <ESC><C-h>a
 
 "File Specific settings
-"----
+"----------------------
 "autocmd FileType html setlocal sw=2 ts=2
 "autocmd FileType xml setlocal sw=2 ts=2
 autocmd FileType make setlocal noexpandtab
