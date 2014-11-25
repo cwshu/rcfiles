@@ -103,6 +103,20 @@ imap <C-l> <ESC><C-h>a
 "autocmd FileType xml setlocal sw=2 ts=2
 autocmd FileType make setlocal noexpandtab
 
+"cscope test
+"-----------
+function! CscopeFindNewTab(word, type)
+    exe 'tabnew'
+    exe 'cs find '.a:type.' '.a:word
+endfunction
+
+nmap <C-\>ts :call CscopeFindNewTab('<C-R><C-W>', 's')<CR>
+nmap <C-\>tg :call CscopeFindNewTab('<C-R><C-W>', 'g')<CR>
+nmap <C-\>tc :call CscopeFindNewTab('<C-R><C-W>', 'c')<CR>
+nmap <C-\>tt :call CscopeFindNewTab('<C-R><C-W>', 't')<CR>
+nmap <C-\>te :call CscopeFindNewTab('<C-R><C-W>', 'e')<CR>
+nmap <C-\>td :call CscopeFindNewTab('<C-R><C-W>', 'd')<CR>
+
 "Misc
 "----
 " 半透明 gvim in Windows -- vimtweak.dll
