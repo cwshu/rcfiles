@@ -12,6 +12,9 @@ call vundle#begin('~/.vim/bundle/')  " a path where Vundle should install plugin
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
+" tree explorer for file
+Plugin 'scrooloose/nerdtree'
+
 " rst plugin
 Plugin 'Rykka/riv.vim'
 
@@ -37,10 +40,8 @@ filetype plugin on
 "
 " see :h vundle for more details or wiki for FAQ
 
-" let g:clang_complete_copen = 1
-" let g:clang_use_library = 1
-" let g:clang_library_path = "/usr/lib/llvm-3.2/lib/"
-
+" plugin short key 
+nmap <F5>n :NERDTreeToggle<CR>
 "Fundamental Settings
 "--------------------
 
