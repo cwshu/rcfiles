@@ -12,9 +12,6 @@ call vundle#begin('~/.vim/bundle/')  " a path where Vundle should install plugin
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
-" tree explorer for file
-Plugin 'scrooloose/nerdtree'
-
 " rst plugin
 Plugin 'Rykka/riv.vim'
 
@@ -25,6 +22,13 @@ Plugin 'steffanc/cscopemaps.vim'
 
 " python plugin
 Plugin 'davidhalter/jedi-vim'
+
+" tree explorer for file
+Plugin 'scrooloose/nerdtree'
+
+" snip
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -42,6 +46,15 @@ filetype plugin on
 
 " plugin short key 
 nmap <F5>n :NERDTreeToggle<CR>
+
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<c-b>"
+let g:UltiSnipsJumpForwardTrigger="<c-m>"
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
+
 "Fundamental Settings
 "--------------------
 
@@ -58,6 +71,7 @@ set nu                       "set line number
 set ru
 syntax on                    "syntax highlighting 
 set cul                      "cursorline highlighting
+"highlight CursorLine cterm=none ctermbg=2 ctermfg=0
 set scrolloff=5              "the minimal screen line above/below the cursor
 set laststatus=2             "status line
 set wildmenu
