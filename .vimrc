@@ -71,7 +71,7 @@ set nu                       "set line number
 set ru
 syntax on                    "syntax highlighting 
 set cul                      "cursorline highlighting
-"highlight CursorLine cterm=none ctermbg=2 ctermfg=0
+hi CursorLine cterm=NONE ctermbg=0
 set scrolloff=5              "the minimal screen line above/below the cursor
 set laststatus=2             "status line
 set wildmenu
@@ -118,6 +118,10 @@ imap <C-l> <ESC><C-h>a
 "autocmd FileType xml setlocal sw=2 ts=2
 autocmd FileType make setlocal noexpandtab
 
+" toggle short keys
+nnoremap <F5>p :set invpaste paste?<CR>
+set pastetoggle=<F5>p
+"inoremap <F5>p <ESC>:set invpaste paste?<CR>a
 "Misc
 "----
 " 半透明 gvim in Windows -- vimtweak.dll
