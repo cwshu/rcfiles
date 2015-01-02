@@ -16,7 +16,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'Rykka/riv.vim'
 
 " C/C++ plugin
-Plugin 'steffanc/cscopemaps.vim'
+Plugin 'u1240976/cscopemaps.vim'
 " Plugin 'Rip-Rip/clang_complete'
 " Plugin 'hari-rangarajan/CCTree'
 
@@ -28,7 +28,7 @@ Plugin 'scrooloose/nerdtree'
 
 " snip
 Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
+Plugin 'u1240976/vim-snippets'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
