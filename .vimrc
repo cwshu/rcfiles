@@ -15,6 +15,9 @@ Plugin 'gmarik/Vundle.vim'
 " rst plugin
 Plugin 'Rykka/riv.vim'
 
+" fish plugin
+Plugin 'aliva/vim-fish'
+
 " C/C++ plugin
 Plugin 'u1240976/cscopemaps.vim'
 " Plugin 'Rip-Rip/clang_complete'
@@ -22,6 +25,9 @@ Plugin 'u1240976/cscopemaps.vim'
 
 " python plugin
 Plugin 'davidhalter/jedi-vim'
+
+" rust syntax highlight
+Plugin 'wting/rust.vim'
 
 " tree explorer for file
 Plugin 'scrooloose/nerdtree'
