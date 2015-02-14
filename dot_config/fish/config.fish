@@ -1,3 +1,12 @@
+### alias ###
+function psa; ps -auxww; end
+function pst; ps -eLf; end
+
+function rmvimswap
+    rm -f .*.sw*
+    rm -f **/.*.sw*
+end
+
 ### fish color ###
 # fish_color_autosuggestion '666'  'green'
 # fish_color_command afffff
