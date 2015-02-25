@@ -2,6 +2,7 @@
 
 "Vundle
 "------
+" install Vundle: git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 set shell=bash                       " use POSIX compatible shell
 
 set nocompatible                     " be iMproved, required
