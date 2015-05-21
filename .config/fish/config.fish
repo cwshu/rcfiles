@@ -11,7 +11,10 @@ function sshptt; ssh bbsu@ptt.cc; end
 function sshbs2; ssh bbsu@ssh.bs2.to; end
 
 ### env ###
+# -U, -g, -l for variable scope
+# -x: export to child process, the environment variable will be copied by fork()
 set -gx PATH $PATH ~/usr/bin
+set -x EDITOR vim
 
 ### rc files related ###
 set -g PYTHONSTARTUP ~/.pythonrc.py
