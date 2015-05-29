@@ -85,6 +85,7 @@ set wildmenu
 set hlsearch                 "highlight when use / to search word
 set showcmd                  "show (partial) command in status line.
 set showmode
+
 set list                     "show tab/end of line
 set listchars=tab:>-         "show tab as >---
 
@@ -119,16 +120,18 @@ imap <C-h> <ESC><C-h>a
 nmap <C-l> :tabmove +1<CR>
 imap <C-l> <ESC><C-h>a
 
+"toggle short keys
+"-----------------
+nnoremap <F5>p :set invpaste paste?<CR>
+set pastetoggle=<F5>p
+"inoremap <F5>p <ESC>:set invpaste paste?<CR>a
+
 "File Specific settings
 "----------------------
 "autocmd FileType html setlocal sw=2 ts=2
 "autocmd FileType xml setlocal sw=2 ts=2
 autocmd FileType make setlocal noexpandtab
 
-" toggle short keys
-nnoremap <F5>p :set invpaste paste?<CR>
-set pastetoggle=<F5>p
-"inoremap <F5>p <ESC>:set invpaste paste?<CR>a
 "Misc
 "----
 " 半透明 gvim in Windows -- vimtweak.dll

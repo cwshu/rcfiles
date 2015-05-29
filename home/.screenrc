@@ -1,7 +1,6 @@
-# 關閉啟動訊息。
 startup_message off
 
-# Caption
+### Caption && hardstatus
 # caption always "%{WK}%-w%<%{=B GK}%n %t%{= KW}%+w%-09=  %Y %M/%d(%D) %{RW} %C %A"
 caption always "%{=u .r} %-w%<%{=ub .Y}%n %t%{=u .r}%+w "
 # caption always "%{=u .G} %-w%<%{=ub .y}%n %t%{=u .G}%+w "
@@ -11,11 +10,12 @@ hardstatus alwaysignore
 # hardstatus alwayslastline "%{= .K} [%l]%<%=%{= .Y}$USER%{= .R}@%H %=%{= .m} %Y/%m/%d%{= .M} %0c "
 # hardstatus alwayslastline "%{=b BW} {%l}%018=%{=B WK} %H %-028=%{YK} %Y %M/%d(%D) %{RW} %C %A"
 
-# 編碼切換
+### encoding
 bind b encoding big5 utf8
 bind u encoding utf8 utf8
 defencoding utf8
 
+### bindkeys
 # bindkey 1: <C-left/right> prev/next, F5 create, F6 kill
 # bindkey ^[[1;5D prev
 # bindkey ^[[1;5C next
@@ -26,8 +26,8 @@ defencoding utf8
 # bindkey -k k6 kill
 
 # bindkey 2: F11/F12 prev/next, F9 create, F10 kill, F7 detach
-bindkey -k k7 detach
-bindkey -k k9 screen # F9 : 新增子視窗。(C-a c) 
-bindkey -k k; kill   # F10 : 關閉當前視窗。 (C-a k)
-bindkey -k F1 prev   # F11 : 切換至上一個視窗。 (C-a p) 
-bindkey -k F2 next   # F12 : 切換至下一個視窗。 (C-a n)
+bindkey -k k7 detach # F7
+bindkey -k k9 screen # F9 : create
+bindkey -k k; kill   # F10
+bindkey -k F1 prev   # F11
+bindkey -k F2 next   # F12
