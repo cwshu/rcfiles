@@ -45,4 +45,3 @@ set -g fish_color_user green -o
 set -g fish_color_cwd green
 set -g fish_color_cwd_root red
 set -g fish_color_status red
-
