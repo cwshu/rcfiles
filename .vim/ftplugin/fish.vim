@@ -1,6 +1,6 @@
 " From: https://github.com/aliva/vim-fish
 
-" include guard, like #ifndef in C/C++ header file
+" include guard, prevent recursive include.
 if exists("b:did_ftplugin")
     finish
 endif
