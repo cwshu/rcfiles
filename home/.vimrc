@@ -32,6 +32,7 @@ Plugin 'wting/rust.vim'
 
 " tree explorer for file
 Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
 
 " snip
 Plugin 'SirVer/ultisnips'
@@ -52,7 +53,8 @@ filetype plugin on
 " see :h vundle for more details or wiki for FAQ
 
 " plugin short key 
-nnoremap <F5>n :NERDTreeToggle<CR>
+"nnoremap <F5>n :NERDTreeToggle<CR>
+nnoremap <F5>n :NERDTreeTabsToggle<CR>
 
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
 let g:UltiSnipsExpandTrigger="<tab>"
