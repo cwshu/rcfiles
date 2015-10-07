@@ -6,6 +6,16 @@
 "   $ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 " install plugin at first time run vim:
 "   $ vim +PluginInstall
+
+" Vundle Brief help
+" :PluginList          - list configured plugins
+" :PluginInstall(!)    - install (update) plugins
+" :PluginSearch(!) foo - search (or refresh cache first) for foo
+" :PluginClean(!)      - confirm (or auto-approve) removal of unused plugins
+"
+" see :h vundle for more details or wiki for FAQ
+
+" Vundle basic settings
 set shell=bash                       " use POSIX compatible shell
 
 set nocompatible                     " be iMproved, required
@@ -13,6 +23,7 @@ filetype off                         " required
 set rtp+=~/.vim/bundle/Vundle.vim    " set the runtime path to include Vundle and initialize
 call vundle#begin('~/.vim/bundle/')  " a path where Vundle should install plugins
 
+" Vundle managed Vim Plugin
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
@@ -40,22 +51,17 @@ Plugin 'u1240976/vim-snippets'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
-"filetype plugin indent on    " required
+" filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
 filetype plugin on
 
-" Brief help
-" :PluginList          - list configured plugins
-" :PluginInstall(!)    - install (update) plugins
-" :PluginSearch(!) foo - search (or refresh cache first) for foo
-" :PluginClean(!)      - confirm (or auto-approve) removal of unused plugins
-"
-" see :h vundle for more details or wiki for FAQ
+" Vim Plugin's short key 
 
-" plugin short key 
-"nnoremap <F5>n :NERDTreeToggle<CR>
+" NERDTree
+" nnoremap <F5>n :NERDTreeToggle<CR>
 nnoremap <F5>n :NERDTreeTabsToggle<CR>
 
+" UltiSnip
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<c-b>"
