@@ -64,6 +64,10 @@ let g:UltiSnipsJumpForwardTrigger="<c-m>"
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
 
+" jedi-vim
+"let g:jedi#popup_on_dot
+"let g:jedi#show_call_signatures
+
 "Fundamental Settings
 "--------------------
 
