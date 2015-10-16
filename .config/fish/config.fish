@@ -10,6 +10,11 @@ end
 function sshptt; ssh bbsu@ptt.cc; end
 function sshbs2; ssh bbsu@ssh.bs2.to; end
 
+function gen_cscopefile_c; find . -name "*.h" -o -name "*.c" > cscope.files; end
+function gen_cscopefile_cpp; find . -name "*.h" -o -name "*.c" -o -name "*.cpp" > cscope.files; end
+function cscope_use_local_file; cscope -Rbkq cscope.files; end
+# TODO: cscope with outside directory
+
 ### env ###
 # -U, -g, -l for variable scope
 # -x: export to child process, the environment variable will be copied by fork()
