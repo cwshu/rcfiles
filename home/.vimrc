@@ -138,6 +138,15 @@ nnoremap <F5>p :set invpaste paste?<CR>
 set pastetoggle=<F5>p
 "inoremap <F5>p <ESC>:set invpaste paste?<CR>a
 
+"Folding Shortkey
+"----------------------
+nnoremap zq za
+nnoremap za zA
+" open/toggle single: za, zx
+" open/close all single level: zr, zm
+" open/close all with nested level: zR, zM
+
+
 "File Specific settings
 "----------------------
 "autocmd FileType html setlocal sw=2 ts=2
