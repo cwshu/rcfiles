@@ -101,6 +101,9 @@ set showmode
 set list                     "show tab/end of line
 set listchars=tab:>-         "show tab as >---
 
+set mouse=
+set tabpagemax=30
+
 "Editing
 "-------
 
@@ -152,3 +155,4 @@ nnoremap za zA
 "autocmd FileType html setlocal sw=2 ts=2
 "autocmd FileType xml setlocal sw=2 ts=2
 autocmd FileType make setlocal noexpandtab
+autocmd FileType java setlocal sw=2 ts=2
