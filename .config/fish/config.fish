@@ -1,6 +1,8 @@
 ### alias ###
-function psa; ps -auxww; end
-function pst; ps -eLf; end
+function psa; ps -auxww $argv; end
+function pst; ps -eLf $argv; end
+
+function mountpretty; mount | column -t; end
 
 function rmvimswap
     rm -f .*.sw*
@@ -15,6 +17,9 @@ function gen_cscopefile_cpp; find . -name "*.h" -o -name "*.c" -o -name "*.cpp" 
 function cscope_use_local_file; cscope -Rbkq cscope.files; end
 # TODO: cscope with outside directory
 
+# checkstyle
+function checkstyle; java com.puppycrawl.tools.checkstyle.Main $argv; end
+
 ### env ###
 # -U, -g, -l for variable scope
 # -x: export to child process, the environment variable will be copied by fork()
@@ -22,7 +27,7 @@ set -gx PATH $PATH ~/usr/bin
 set -x EDITOR vim
 
 ### rc files related ###
-set -g PYTHONSTARTUP ~/.pythonrc.py
+set -gx PYTHONSTARTUP ~/.pythonrc.py
 
 ### fish color ###
 # fish_color_autosuggestion '666'  'green'
