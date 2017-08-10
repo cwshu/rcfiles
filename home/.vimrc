@@ -18,7 +18,10 @@
 " Vundle basic settings
 set shell=bash                       " use POSIX compatible shell
 
-set nocompatible                     " be iMproved, required
+if !has('nvim')
+    set nocompatible                     " be iMproved, required
+endif
+
 filetype off                         " required
 set rtp+=~/.vim/bundle/Vundle.vim    " set the runtime path to include Vundle and initialize
 call vundle#begin('~/.vim/bundle/')  " a path where Vundle should install plugins
