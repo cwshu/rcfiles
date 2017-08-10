@@ -84,7 +84,8 @@ let g:UltiSnipsEditSplit="vertical"
 set encoding=utf-8    
 set langmenu=zh_TW.UTF-8
 language message zh_TW.UTF-8
-set fileencodings=ucs-bom,utf-8,Big5,cp950,GB2312,GBK
+set fileencodings=ucs-bom,utf-8,Big5,cp950,GB2312,GBK,cp932
+"set fileencodings=GB2312,GBK,cp932
 
 "User Interface
 "--------------
