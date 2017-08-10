@@ -11,6 +11,11 @@ end
 
 function lsn; ls --color=never $argv; end
 
+
+function greps -w grep -d "alias greps=grep --exclude=cscope.out --color=always"
+    grep --exclude=cscope.out --color=always $argv;
+end
+
 # cscope
 function gen_cscopefile_c; find . -name "*.h" -o -name "*.c" > cscope.files; end
 function gen_cscopefile_cpp; find . -name "*.h" -o -name "*.c" -o -name "*.cpp" > cscope.files; end
