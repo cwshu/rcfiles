@@ -95,7 +95,7 @@ set nu                       "set line number
 set ru
 syntax on                    "syntax highlighting 
 set cul                      "cursorline highlighting
-hi CursorLine cterm=NONE ctermbg=0
+hi CursorLine cterm=NONE ctermbg=8
 set scrolloff=5              "the minimal screen line above/below the cursor
 set laststatus=2             "status line
 set wildmenu
@@ -148,8 +148,8 @@ set pastetoggle=<F5>p
 
 "Folding Shortkey
 "----------------------
-nnoremap zq za
-nnoremap za zA
+" nnoremap zq za
+" nnoremap za zA
 " open/toggle single: za, zx
 " open/close all single level: zr, zm
 " open/close all with nested level: zR, zM
