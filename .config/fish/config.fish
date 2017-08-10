@@ -9,9 +9,9 @@ function rmvimswap
     rm -f **/.*.sw*
 end
 
-function sshptt; ssh bbsu@ptt.cc; end
 function lsn; ls --color=never $argv; end
 
+# cscope
 function gen_cscopefile_c; find . -name "*.h" -o -name "*.c" > cscope.files; end
 function gen_cscopefile_cpp; find . -name "*.h" -o -name "*.c" -o -name "*.cpp" > cscope.files; end
 function cscope_use_local_file; cscope -Rbkq cscope.files; end
@@ -20,8 +20,8 @@ function cscope_use_local_file; cscope -Rbkq cscope.files; end
 # checkstyle
 function checkstyle; java com.puppycrawl.tools.checkstyle.Main $argv; end
 
-
-# todo
+# custom
+function sshptt; ssh bbsu@ptt.cc; end
 function todo
     cd ~/to_do/
     vim +NERDTreeTabsToggle 201601/to_do_list.rst
