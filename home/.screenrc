@@ -15,6 +15,12 @@ bind b encoding big5 utf8
 bind u encoding utf8 utf8
 defencoding utf8
 
+#### neovim
+### ESC time in neovim
+maptimeout 10
+### neovim color
+term screen-256color
+
 ### bindkeys
 # bindkey 1: <C-left/right> prev/next, F5 create, F6 kill
 # bindkey ^[[1;5D prev
