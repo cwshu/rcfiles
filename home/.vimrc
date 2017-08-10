@@ -32,6 +32,7 @@ Plugin 'gmarik/Vundle.vim'
 
 " rst plugin
 Plugin 'Rykka/riv.vim'
+Plugin 'Rykka/InstantRst'
 
 " C/C++ plugin
 Plugin 'u1240976/cscopemaps.vim'
