@@ -1,5 +1,6 @@
 "Vimrc
 
+set tabpagemax=30
 "Vundle
 "------
 " install Vundle: 
