@@ -39,6 +39,10 @@ Plugin 'Rykka/InstantRst'
 Plugin 'u1240976/cscopemaps.vim'
 " Plugin 'Rip-Rip/clang_complete'
 " Plugin 'hari-rangarajan/CCTree'
+Plugin 'majutsushi/tagbar'
+" Plugin 'vim-scripts/taglist.vim'
+" Plugin 'wesleyche/SrcExpl'
+" Plugin 'wesleyche/Trinity'
 
 " python plugin
 Plugin 'davidhalter/jedi-vim'
@@ -76,6 +80,21 @@ let g:UltiSnipsJumpForwardTrigger="<c-m>"
 
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
+
+" Tagbar Settings
+" Open and close the tagbar separately
+nmap <F5>t :TagbarToggle<CR>
+
+"" Trinity
+"" Open and close all the three plugins on the same time
+"nmap <F5>q :TrinityToggleAll<CR>
+"" Open and close the srcexpl.vim separately
+"nmap <F5>w :TrinityToggleSourceExplorer<CR>
+"" Open and close the taglist.vim separately
+"nmap <F5>e :TrinityToggleTagList<CR>
+"" Open and close the NERD_tree.vim separately
+"nmap <F5>r :TrinityToggleNERDTree<CR>
+"" Back to last modified line
 
 " jedi-vim
 "let g:jedi#popup_on_dot
