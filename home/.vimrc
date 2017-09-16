@@ -54,6 +54,8 @@ Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'SirVer/ultisnips'
 Plugin 'u1240976/vim-snippets'
 
+Plugin 'MattesGroeger/vim-bookmarks'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 " filetype plugin indent on    " required
@@ -78,6 +80,12 @@ let g:UltiSnipsEditSplit="vertical"
 " jedi-vim
 "let g:jedi#popup_on_dot
 "let g:jedi#show_call_signatures
+
+" vim-bookmarks
+highlight BookmarkSign ctermbg=NONE ctermfg=160
+highlight BookmarkLine ctermbg=194 ctermfg=NONE
+let g:bookmark_sign = '*'
+let g:bookmark_highlight_lines = 1
 
 "Fundamental Settings
 "--------------------
