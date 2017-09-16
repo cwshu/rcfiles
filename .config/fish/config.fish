@@ -11,21 +11,22 @@ end
 
 function lsn; ls --color=never $argv; end
 
-
-function greps -w grep -d "alias greps=grep --exclude=cscope.out --color=always"
-    grep --exclude=cscope.out --color=always $argv;
-end
-
+## source code ##
 # cscope
 function gen_cscopefile_c; find . -name "*.h" -o -name "*.c" > cscope.files; end
 function gen_cscopefile_cpp; find . -name "*.h" -o -name "*.c" -o -name "*.cpp" > cscope.files; end
 function cscope_use_local_file; cscope -Rbkq cscope.files; end
 # TODO: cscope with outside directory
 
+# grep
+function greps -w grep -d "alias greps=grep --exclude=cscope.out --color=always"
+    grep --exclude=cscope.out --color=always $argv;
+end
+
 # checkstyle
 function checkstyle; java com.puppycrawl.tools.checkstyle.Main $argv; end
 
-# custom
+## custom
 function sshptt; ssh bbsu@ptt.cc; end
 function todo
     cd ~/to_do/
