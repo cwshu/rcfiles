@@ -26,3 +26,5 @@
 [color]
     ui = true
 	status = false
+[http]
+	postBuffer = 1048576000
