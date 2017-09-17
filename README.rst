@@ -1,9 +1,11 @@
+
 This is about common configuration files I usually used.
 
 current state (program with configuration file)
 
-- vim
-- tcsh
-- screen and tmux
-- git and mercurial
+- vim, neovim
+- tcsh, fish
+- screen, tmux
+- git, mercurial
+- gdb
 - python interpreter
