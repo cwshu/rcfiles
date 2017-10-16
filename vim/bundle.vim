@@ -34,7 +34,7 @@
 
 " Vundle plugins {
     " rst plugin
-    Plugin 'Rykka/riv.vim'
+    Plugin 'u1240976/riv.vim'
     Plugin 'Rykka/InstantRst'
     
     " C/C++ plugin
