@@ -33,6 +33,17 @@
 " }
 
 " Vundle plugins {
+    " Tree Explorer for file - NERDTree
+    Plugin 'scrooloose/nerdtree'
+    Plugin 'jistr/vim-nerdtree-tabs'
+    
+    " Code Snippet - Ultisnip
+    Plugin 'SirVer/ultisnips'
+    Plugin 'u1240976/vim-snippets'
+    
+    " bookmark - vim-bookmarks
+    Plugin 'MattesGroeger/vim-bookmarks'
+
     " rst plugin
     Plugin 'u1240976/riv.vim'
     Plugin 'Rykka/InstantRst'
@@ -51,16 +62,6 @@
     
     " rust syntax highlight
     Plugin 'wting/rust.vim'
-    
-    " tree explorer for file
-    Plugin 'scrooloose/nerdtree'
-    Plugin 'jistr/vim-nerdtree-tabs'
-    
-    " snip
-    Plugin 'SirVer/ultisnips'
-    Plugin 'u1240976/vim-snippets'
-    
-    Plugin 'MattesGroeger/vim-bookmarks'
 " }
 
 " Vundle end {
@@ -73,41 +74,49 @@
 " }
 
 " Plugin's shortcut key {
-    " NERDTree
-    " nnoremap <F5>n :NERDTreeToggle<CR>
-    nnoremap <F5>n :NERDTreeTabsToggle<CR>
+    " NERDTree {
+        " nnoremap <F5>n :NERDTreeToggle<CR>
+        nnoremap <F5>n :NERDTreeTabsToggle<CR>
+    " }
 
-    " UltiSnip
-    " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-    let g:UltiSnipsExpandTrigger="<tab>"
-    let g:UltiSnipsJumpBackwardTrigger="<c-b>"
-    let g:UltiSnipsJumpForwardTrigger="<c-m>"
+    " UltiSnip {
+        " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+        let g:UltiSnipsExpandTrigger="<tab>"
+        let g:UltiSnipsJumpBackwardTrigger="<c-b>"
+        let g:UltiSnipsJumpForwardTrigger="<c-m>"
 
-    " If you want :UltiSnipsEdit to split your window.
-    let g:UltiSnipsEditSplit="vertical"
+        " If you want :UltiSnipsEdit to split your window.
+        let g:UltiSnipsEditSplit="vertical"
+    " }
 
-    " Tagbar Settings
-    " Open and close the tagbar separately
-    nmap <F5>t :TagbarToggle<CR>
+    " vim-bookmarks {
+        highlight BookmarkSign ctermbg=NONE ctermfg=160
+        highlight BookmarkLine ctermbg=194 ctermfg=NONE
+        let g:bookmark_sign = '*'
+        let g:bookmark_highlight_lines = 1
+    " }
 
-    "" Trinity
-    "" Open and close all the three plugins on the same time
-    "nmap <F5>q :TrinityToggleAll<CR>
-    "" Open and close the srcexpl.vim separately
-    "nmap <F5>w :TrinityToggleSourceExplorer<CR>
-    "" Open and close the taglist.vim separately
-    "nmap <F5>e :TrinityToggleTagList<CR>
-    "" Open and close the NERD_tree.vim separately
-    "nmap <F5>r :TrinityToggleNERDTree<CR>
-    "" Back to last modified line
+    " C/C++ plugin {
+        " Tagbar {
+            " Open and close the tagbar separately
+            nmap <F5>t :TagbarToggle<CR>
+        " }
 
-    " jedi-vim
-    "let g:jedi#popup_on_dot
-    "let g:jedi#show_call_signatures
+        " Trinity {
+            "" Open and close all the three plugins on the same time
+            "nmap <F5>q :TrinityToggleAll<CR>
+            "" Open and close the srcexpl.vim separately
+            "nmap <F5>w :TrinityToggleSourceExplorer<CR>
+            "" Open and close the taglist.vim separately
+            "nmap <F5>e :TrinityToggleTagList<CR>
+            "" Open and close the NERD_tree.vim separately
+            "nmap <F5>r :TrinityToggleNERDTree<CR>
+            "" Back to last modified line
+        " }
+    " }
 
-    " vim-bookmarks
-    highlight BookmarkSign ctermbg=NONE ctermfg=160
-    highlight BookmarkLine ctermbg=194 ctermfg=NONE
-    let g:bookmark_sign = '*'
-    let g:bookmark_highlight_lines = 1
+    " jedi-vim {
+        "let g:jedi#popup_on_dot
+        "let g:jedi#show_call_signatures
+    " }
 " }
