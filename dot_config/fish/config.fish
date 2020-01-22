@@ -26,17 +26,14 @@ end
 # checkstyle
 function checkstyle; java com.puppycrawl.tools.checkstyle.Main $argv; end
 
-## custom
-function sshptt; ssh bbsu@ptt.cc; end
-function todo
-    cd ~/to_do/
-    vim +NERDTreeTabsToggle 201601/to_do_list.rst
-end
-
 ### env ###
 # -U, -g, -l for variable scope
 # -x: export to child process, the environment variable will be copied by fork()
+
 set -gx PATH $PATH ~/usr/bin ~/go/bin/
+# user directory of python package (pip install --user)
+set -gx PATH $PATH ~/.local/bin
+
 set -x EDITOR vim
 
 ### rc files related ###
