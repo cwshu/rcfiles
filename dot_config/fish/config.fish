@@ -1,27 +1,26 @@
 ### alias ###
+
 function psa; ps -auxww $argv; end
 function pst; ps -eLf $argv; end
+
+function lsn; ls --color=never $argv; end
 
 function mountpretty; mount | column -t; end
 
 function rmvimswap
-    rm -f .*.sw*
-    rm -f **/.*.sw*
+    rm -f .*.sw* **/.*.sw*
 end
-
-function lsn; ls --color=never $argv; end
-
-## source code ##
-# cscope
-function gen_cscopefile_c; find . -name "*.h" -o -name "*.c" > cscope.files; end
-function gen_cscopefile_cpp; find . -name "*.h" -o -name "*.c" -o -name "*.cpp" > cscope.files; end
-function cscope_use_local_file; cscope -Rbkq cscope.files; end
-# TODO: cscope with outside directory
 
 # grep
 function greps -w grep -d "alias greps=grep --exclude=cscope.out --color=always"
     grep --exclude=cscope.out --color=always $argv;
 end
+
+# cscope
+function gen_cscopefile_c; find . -name "*.h" -o -name "*.c" > cscope.files; end
+function gen_cscopefile_cpp; find . -name "*.h" -o -name "*.c" -o -name "*.cpp" > cscope.files; end
+function cscope_use_local_file; cscope -Rbkq cscope.files; end
+# TODO: cscope with outside directory
 
 # checkstyle
 function checkstyle; java com.puppycrawl.tools.checkstyle.Main $argv; end
@@ -30,13 +29,14 @@ function checkstyle; java com.puppycrawl.tools.checkstyle.Main $argv; end
 # -U, -g, -l for variable scope
 # -x: export to child process, the environment variable will be copied by fork()
 
+set -x EDITOR vim
+
 set -gx PATH $PATH ~/usr/bin ~/go/bin/
+
 # user directory of python package (pip install --user)
 set -gx PATH $PATH ~/.local/bin
 
-set -x EDITOR vim
-
-### rc files related ###
+# python interpreter config
 set -gx PYTHONSTARTUP ~/.pythonrc.py
 
 ### fish color ###
