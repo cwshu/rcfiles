@@ -30,7 +30,7 @@ def main():
         # zsh
         #   replace oh-my-zsh default .zshrc with ours.
         "mv {home}/.zshrc {home}/.zshrc.bak".format(home=home),
-        "ln -s zshrc {home}/.zshrc".format(home=home),
+        "ln -s {rc}/zshrc {home}/.zshrc".format(rc=rc, home=home),
         "mkdir -p {rc}/zsh/plugins".format(rc=rc),
         "git clone https://github.com/zsh-users/zsh-autosuggestions "
         "{rc}/zsh/plugins/zsh-autosuggestions".format(rc=rc),
