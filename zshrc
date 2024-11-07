@@ -91,6 +91,8 @@ export EDITOR='vim'
 #   export EDITOR='nvim'
 # fi
 
+export PYTHONSTARTUP='$HOME/.pythonrc.py'
+
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
 
