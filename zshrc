@@ -66,12 +66,15 @@ ZSH_THEME="afowler"
 # ZSH_CUSTOM=/path/to/new-custom-folder
 ZSH_CUSTOM=$HOME/rcfiles/zsh
 
+# Plugin settings
+zstyle :omz:plugins:ssh-agent lazy yes
+
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git history-substring-search zsh-autosuggestions)
+plugins=(git history-substring-search zsh-autosuggestions ssh-agent)
 # plugins=(git zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
